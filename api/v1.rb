@@ -4,7 +4,7 @@ module Aurora
       format :json
       version 'v1'
 
-      # mount V1::Test
+      mount V1::Test
 
       desc "Returns the world"
       get :hello do
