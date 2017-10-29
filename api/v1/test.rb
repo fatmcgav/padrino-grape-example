@@ -1,7 +1,7 @@
 module Aurora
   module API
-    # class V1::Test < Grape::API
-    class V1 < Grape::API
+    class V1::Test < Grape::API
+    # class V1 < Grape::API
       # format :json
       # version 'v1', :using => :path
 
