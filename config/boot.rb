@@ -50,14 +50,13 @@ Padrino.dependency_paths.unshift Padrino.root('config/initializers/**/*.rb')
 #
 Padrino.before_load do
   Padrino.dependency_paths.unshift Padrino.root('api/**/*.rb')
-  puts "Padrino deps = \n#{Padrino.dependency_paths}"
+  puts "Dep_path =\n#{Padrino.dependency_paths}"
 end
 
 ##
 # Add your after (RE)load hooks here
 #
 Padrino.after_load do
-  puts "Constants = \n#{Padrino.constants}"
 end
 
 Padrino.load!

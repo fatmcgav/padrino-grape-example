@@ -4,7 +4,7 @@ module Aurora
       format :json
 
       # Mount v1 API
-      mount Aurora::API::V1
+      mount Aurora::API::V1::Root
     end
   end
 end

@@ -33,7 +33,6 @@ Padrino.configure_apps do
 end
 
 # Mounts the core application for this project
-# Padrino.mount('Aurora::App', :app_file => Padrino.root('app/app.rb')).to('/')
-# Padrino.mount('Aurora::API::Base', :app_file => Padrino.root('api/base.rb')).to('/api/')
-Padrino.mount('Aurora::API::V1', :app_file => Padrino.root('api/v1.rb'), :app_class => 'Aurora::API::V1::Root').to('/api/v1/')
-# Padrino.mount('Aurora::Api::V1', :app_file => Padrino.root('api/v1.rb')).to('/api/v1/')
+Padrino.mount('Aurora::API', :app_file => Padrino.root('api/base.rb'), :app_class => 'Aurora::API::Base').to('/api')
+# Padrino.mount('Aurora::API::V1', :app_file => Padrino.root('api/v1.rb'), :app_class => 'Aurora::API::V1::Root').to('/api/v1/')
+Padrino.mount('Aurora::App', :app_file => Padrino.root('app/app.rb')).to('/')

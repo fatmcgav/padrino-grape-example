@@ -3,7 +3,7 @@ module Aurora
     module V1
       class Root < Grape::API
         format :json
-        # version 'v1'
+        version 'v1'
 
         mount Aurora::API::V1::Test
 
